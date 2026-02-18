@@ -5,6 +5,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
     {name: 'Home', href: '/'},
@@ -17,7 +18,7 @@ const navItems = [
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="border-b bg-green-100 sticky top-0 z-50  h-20">
+    <header className="border-b bg-green-100 sticky top-0 z-50 h-20">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center w-full">
 
         {/* Logo */}
@@ -46,7 +47,7 @@ export default function Navbar() {
          <Button className="bg-green-600 active:scale-105 hover:scale-95">Login</Button>
                  {/* mobile dropdown */}
 <div className="lg:hidden">
-        <button onClick={() => setIsOpen(!isOpen)}>{isOpen ? 'Close' : 'Open'}</button>
+        <button onClick={() => setIsOpen(!isOpen)}>{isOpen ? <X/> : <Menu/>  }</button>
     </div>
           {/* mobile menu */}
           {isOpen && (
