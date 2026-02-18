@@ -1,42 +1,56 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import bgImage from "../../../public/hero-farm-DVYICUUK.jpg";
 
 export default function Hero() {
   return (
-    <section className="bg-linear-to-br from-gray-300 via-green-200 to-green-100 min-h-screen">
-      <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <section className="relative min-h-screen flex items-center">
 
-        {/* Text */}
-        <div className="">
+      {/* Background */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${bgImage.src})`,
+        }}
+      />
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-linear-to-r from-black/70 via-black/50 to-black/30" />
+
+      {/* Content */}
+      <main className="relative max-w-7xl mx-auto px-6 py-20 w-full">
+        <div className="max-w-2xl text-white">
+
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Buy Fresh Products <br /> Direct From Farmers
+            Fresh Products <br />
+            Directly From Farmers
           </h1>
 
-          <p className="leading-relaxed  mt-6 text-gray-600 text-lg ">
-            Save money and support farmers by purchasing directly
-            from local producers near you.
+          <p className="mt-6 text-lg text-gray-200 leading-relaxed">
+            Discover locally grown fruits, vegetables, and grains.
+            Support farmers while enjoying fresh and affordable food.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <Link href="/products">
-              <Button size="lg">Shop Products</Button>
+              <Button size="lg" className="hover:bg-green-500 hover:scale-95 active:scale-105 hover:text-black px-8">
+                Shop Products
+              </Button>
             </Link>
 
             <Link href="/farmer">
-              <Button size="lg" variant="outline">
+              <Button
+                size="lg"
+                
+                className="text-white bg-green-700  hover:bg-white hover:text-black px-8"
+              >
                 Sell Products
               </Button>
             </Link>
           </div>
-        </div>
 
-        {/* Image */}
-        <img
-          src="https://images.unsplash.com/photo-1761839256951-10c4468c3621?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MjJ8fGFncmljdWx0dXJlfGVufDB8fDB8fHww"
-          alt="Farmers"
-          className="rounded-xl shadow-lg w-full h-105 object-cover"
-        />
-      </div>
+        </div>
+      </main>
     </section>
   );
 }
