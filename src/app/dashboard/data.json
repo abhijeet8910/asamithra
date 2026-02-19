@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "product": "Tomatoes",
+      "category": "Vegetables",
+      "status": "In Stock",
+      "harvestTarget": "500 kg",
+      "availableStock": "320 kg",
+      "price": "₹30/kg",
+      "marketPrice": "₹38/kg"
+    },
+    {
+      "id": 2,
+      "product": "Potatoes",
+      "category": "Vegetables",
+      "status": "In Stock",
+      "harvestTarget": "800 kg",
+      "availableStock": "650 kg",
+      "price": "₹22/kg",
+      "marketPrice": "₹28/kg"
+    },
+    {
+      "id": 3,
+      "product": "Onions",
+      "category": "Vegetables",
+      "status": "Low Stock",
+      "harvestTarget": "600 kg",
+      "availableStock": "120 kg",
+      "price": "₹25/kg",
+      "marketPrice": "₹32/kg"
+    },
+    {
+      "id": 4,
+      "product": "Wheat",
+      "category": "Grains",
+      "status": "In Stock",
+      "harvestTarget": "1500 kg",
+      "availableStock": "1100 kg",
+      "price": "₹20/kg",
+      "marketPrice": "₹26/kg"
+    },
+    {
+      "id": 5,
+      "product": "Rice",
+      "category": "Grains",
+      "status": "Out of Stock",
+      "harvestTarget": "1000 kg",
+      "availableStock": "0 kg",
+      "price": "₹40/kg",
+      "marketPrice": "₹48/kg"
+    },
+    {
+      "id": 6,
+      "product": "Mangoes",
+      "category": "Fruits",
+      "status": "In Stock",
+      "harvestTarget": "400 kg",
+      "availableStock": "290 kg",
+      "price": "₹60/kg",
+      "marketPrice": "₹75/kg"
+    },
+    {
+      "id": 7,
+      "product": "Milk",
+      "category": "Dairy",
+      "status": "In Stock",
+      "harvestTarget": "200 liters",
+      "availableStock": "150 liters",
+      "price": "₹50/liter",
+      "marketPrice": "₹58/liter"
+    }
+  ]
