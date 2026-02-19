@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link href="/products">
+            <Link href="/role">
               <Button
                 size="lg"
                 className="hover:bg-green-500 hover:scale-95 active:scale-105 hover:text-black px-8"

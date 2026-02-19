@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
     {name: 'Home', href: '/'},
-    {name: 'Marketplace', href: '/products'},
+    {name: 'Marketplace', href: '/role'},
     {name: 'Sell Products', href: '/farmer'},
     {name: 'About', href: '/about'},
     {name: 'Contact', href: '/contact'},
@@ -51,7 +51,7 @@ export default function Navbar() {
     </div>
           {/* mobile menu */}
           {isOpen && (
-            <div className="absolute top-20 flex flex-col space-y-5 left-0 w-full bg-white p-6">
+            <div className="absolute top-20 flex flex-col space-y-5 left-0 w-full bg-white/90 p-6">
               {navItems.map((item) => (
                 <Link key={item.name} href={item.href} className="text-lg font-medium hover:text-green-600" onClick={() => setIsOpen(false)}>
                   {item.name}
