@@ -18,18 +18,18 @@ const navItems = [
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <header className="border-b bg-green-100 sticky top-0 z-50 h-20">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center w-full">
+    <header className=" fixed top-0 left-0 z-50 w-full ">
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center ">
 
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-green-700">
+        <Link href="/" className="text-2xl font-bold text-white">
           ASWAMITHRA
         </Link>
 
         {/* Laptop Menu */}
         <div className="hidden lg:flex items-center gap-6">
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-lg font-medium hover:text-green-600">
+            <Link key={item.name} href={item.href} className="text-lg font-medium text-white hover:text-green-600 hover:underline">
               {item.name}
             </Link>
           ))}

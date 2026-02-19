@@ -17,7 +17,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const savings = product.marketPrice - product.price;
 
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition bg-green-50">
+    <Card className="overflow-hidden hover:shadow-xl transition bg-green-50 p-0">
       {/* Image */}
       <div className="relative h-48 w-full">
         <Image
