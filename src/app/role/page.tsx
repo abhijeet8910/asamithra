@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6">
+    <section className="relative min-h-screen flex items-center justify-center px-6 mt-20">
       {/* Fixed Background Image */}
       <div
         className="fixed inset-0 bg-cover bg-center bg-no-repeat -z-10"
