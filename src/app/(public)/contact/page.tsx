@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../../../public/hero-farm-DVYICUUK.jpg";
+import bgImage from "../../../../public/hero-farm-DVYICUUK.jpg";
 
 const Page = () => {
   return (
