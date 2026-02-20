@@ -10,7 +10,7 @@ import { Menu, X } from "lucide-react";
 const navItems = [
     {name: 'Home', href: '/'},
     {name: 'Marketplace', href: '/role'},
-    {name: 'Sell Products', href: '/farmer'},
+    {name: 'Sell Products', href: '/login'},
     {name: 'About', href: '/about'},
     {name: 'Contact', href: '/contact'},
 ]
@@ -44,10 +44,10 @@ export default function Navbar() {
 
         {/* login button 
          */}
-         <Button className="bg-green-600 active:scale-105 hover:scale-95">Login</Button>
+         <Button className="bg-green-600 active:scale-105 hover:scale-95"><Link href="/login">Login</Link></Button>
                  {/* mobile dropdown */}
 <div className="lg:hidden">
-        <button onClick={() => setIsOpen(!isOpen)}>{isOpen ? <X/> : <Menu/>  }</button>
+        <button onClick={() => setIsOpen(!isOpen)}>{isOpen ? <X className="text-green-400"/> : <Menu className="text-green-400"/>  }</button>
     </div>
           {/* mobile menu */}
           {isOpen && (
