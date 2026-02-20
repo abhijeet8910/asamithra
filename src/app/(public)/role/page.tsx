@@ -31,7 +31,7 @@ const page = () => {
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
 
           {/* Customer Card */}
-          <Link href="/products" className="h-full">
+          <Link href="/consumerLogin" className="h-full">
             <div className="h-full flex flex-col group bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 text-white hover:bg-white hover:text-black transition duration-300 cursor-pointer shadow-xl">
               <div className="text-4xl mb-4">🛒</div>
               <h2 className="text-2xl font-semibold">Individual Customer</h2>
@@ -47,7 +47,7 @@ const page = () => {
           </Link>
 
           {/* Business Buyer Card */}
-          <Link href="/products" className="h-full">
+          <Link href="/consumerLogin" className="h-full">
             <div className="h-full flex flex-col group bg-green-700/80 backdrop-blur-md border border-green-400/30 rounded-2xl p-8 text-white hover:bg-white hover:text-black transition duration-300 cursor-pointer shadow-xl">
               <div className="text-4xl mb-4">🏪</div>
               <h2 className="text-2xl font-semibold">Business Buyer</h2>
