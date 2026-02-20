@@ -39,7 +39,7 @@ export default function Hero() {
               </Button>
             </Link>
 
-            <Link href="/farmer">
+            <Link href="/login">
               <Button
                 size="lg"
                 className="text-white bg-green-700 hover:bg-white hover:text-black px-8"
